@@ -18,4 +18,5 @@ source $GEONODE_HOME/bin/activate
 
 # Run the tests
 echo ">>>> Running GeoNode Integration Tests" 
+unset DJANGO_SETTINGS_MODULE
 python manage.py test "$@"
